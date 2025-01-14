@@ -6,16 +6,32 @@
 
 // - creo il ciclo
 // - creo i vari IF
-//      - SE il giro di ciclo è divisibile per 3 -> stampo "Fizz"
-//      - SE il giro di ciclo è divisibile per 5 -> stampo "Buzz"
-//      - SE il giro di ciclo è divisibile per 3 && 5 -> stampo "FizzBuzz"
-//      - ALTRIMENTI non stampo nulla (credo?)
+//      - SE il giro di ciclo è divisibile per 3 -> stampo "Fizz" AL POSTO DEL NUMERO
+//      - SE il giro di ciclo è divisibile per 5 -> stampo "Buzz" AL POSTO DEL NUMERO
+//      - SE il giro di ciclo è divisibile per 3 && 5 -> stampo "FizzBuzz" AL POSTO DEL NUMERO
+//      - ALTRIMENTI stampo semplicemente i (credo?)
 
 
-// ciclo da 1 a 100
-for (let i = 1; i <=100; i++){
+
+for (let i = 1; i <= 100; i++){
     
-    console.log(i);
+    if(i % 3 == 0){
+
+        console.log("Fizz");
+
+    } else if(i % 5 == 0) {
+
+        console.log("Buzz");
+
+    } else if(i % 3 == 0 && i % 5 == 0){
+
+        console.log("FizzBuzz");
+
+    } else {
+
+        console.log(i);
+        
+    }
 
 }
 
